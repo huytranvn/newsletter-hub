@@ -10,8 +10,11 @@ from models.schemas import (
     Category,
     Column,
 )
-
 from utils.scraper import Scraper
+from utils.logging import get_logger
+
+
+logger = get_logger('python_weekly.py')
 
 
 class PythonWeekly:
@@ -53,21 +56,33 @@ class PythonWeekly:
             name='upcoming',
         )
 
-        # Scrape the page.
-        scraper = Scraper(
-            url=self.PAGE_URL.format(issue_number),
-            page_name=self.PAGE_NAME.format(issue_number),
-        )
-
         # Init flags.
         self.column = None
         self.previous_item = None
+
+    def run(self):
+        # Scrape the page.
+        logger.info(f'Scrape Python Weekly issue: {self.issue.number}')
+        scraper = Scraper(
+            url=self.PAGE_URL.format(self.issue.number),
+            page_name=self.PAGE_NAME.format(self.issue.number),
+        )
 
         # Scrape the webpage.
         scraper.scrape()
 
         # Parse content.
         self.parse_content()
+
+        for column in self.issue.columns:
+            logger.info(column.title)
+            logger.info(column.link.url)
+            logger.info(column.description)
+            logger.info('--------------------------------------------')
+
+        logger.info('********************************************')
+        logger.info('***           END OF ISSUE               ***')
+        logger.info('********************************************')
 
     def get_file_path(self):
         return os.path.join(
