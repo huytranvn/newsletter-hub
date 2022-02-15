@@ -1,0 +1,560 @@
+<html>
+	<head>
+		<title>Python Weekly Issue 3 - Python, Django, Web2py, PyCharm, Hadoop, TurboGears, GAE, MongoDB</title>
+	    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	    <meta name="description" content="" />
+<meta name="keywords" content="Python, Django, Web2py, PyCharm, Hadoop, TurboGears, GAE, MongoDB" />
+
+	<link rel="stylesheet" type="text/css" href="archive.css" media="screen" />	
+	</head>
+	<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0" style="background-color: #F5F1DE;">
+			
+<div align="center">			
+			<!-- Begin MailChimp Signup Form -->
+			<!--[if IE]>
+			<style type="text/css" media="screen">
+				#mc_embed_signup fieldset {position: relative;}
+				#mc_embed_signup legend {position: absolute; top: -1em; left: .2em;}
+			</style>
+			<![endif]--> 
+			<!--[if IE 7]>
+			<style type="text/css" media="screen">
+				.mc-field-group {overflow:visible;}
+			</style>
+			<![endif]-->
+			<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
+			<script type="text/javascript" src="http://downloads.mailchimp.com/js/jquery.validate.js"></script>
+			<script type="text/javascript" src="http://downloads.mailchimp.com/js/jquery.form.js"></script>
+
+			<div id="mc_embed_signup">
+			<form action="http://pythonweekly.us2.list-manage2.com/subscribe/post?u=e2e180baf855ac797ef407fc7&amp;id=9e26887fc5" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" style="font: normal 100% Arial, sans-serif;font-size: 10px;">
+			<fieldset style="-moz-border-radius: 4px;border-radius: 4px;-webkit-border-radius: 4px;border: 1px solid #ccc;padding-top: 1.5em;margin: .5em 0;background-color: #fff;color: #000;text-align: left;">
+				<legend style="white-space: normal;text-transform: capitalize;font-weight: bold;color: #000;background: #F5F1DE;padding: .5em 1em;border: 1px solid #ccc;-moz-border-radius: 4px;border-radius: 4px;-webkit-border-radius: 4px;font-size: 1.5em;"><span>Get Your Weekly Dose of Python</span></legend>
+			<!--	<div class="indicate-required" style="text-align: right;font-style: italic;overflow: hidden;color: #000;margin: 0 9% 0 0;">* indicates required</div> -->
+			<div class="mc-field-group" style="margin: 0em 0%;clear: both;overflow: hidden;">
+			<label for="mce-EMAIL" style="display: inline;margin: em 0;line-height: 1em;font-weight: normal;font-size: 2.3em;padding: .2em">Enter your e-mail:<strong class="note-required"></strong>
+			</label>
+			<input type="text" value="" name="EMAIL" class="required email" id="mce-EMAIL" style="height:2.3em;margin-right: 1.5em;padding: .2em .3em;width: 50%;float: left;z-index: 999;">
+			<input type="image" src="subscribe.png" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn" style="clear: both;width: auto;display: inline;padding: 1em">
+			<label style="display: inline;margin: em 0;line-height: 1.5em;font-weight: normal;font-size: 1.5em;padding: .2em">A free, once-weekly e-mail round-up of Python news, articles, tools and libraries, new releases, events and more. Easy to unsubscribe. No spam.</label>
+			</div>
+					<div id="mce-responses" style="float: left;top: -1.4em;padding: 0em .5em 0em .5em;overflow: hidden;width: 90%;margin: 0 5%;clear: both;">
+						<div class="response" id="mce-error-response" style="display: none;margin: 1em 0;padding: 1em .5em .5em 0;font-weight: bold;float: left;top: -1.5em;z-index: 1;width: 80%;background: FFFFFF;color: #D12F19;"></div>
+						<div class="response" id="mce-success-response" style="display: none;margin: 1em 0;padding: 1em .5em .5em 0;font-weight: bold;float: left;top: -1.5em;z-index: 1;width: 80%;background: #FFFFFF;color: #529214;"></div>
+					</div>
+				<!--	<div><input type="image" src="subscribe.png" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn" style="clear: both;width: auto;display: block;margin: 1em 0 1em 7%;"></div> -->
+				</fieldset>	
+				<a href="#" id="mc_embed_close" class="mc_embed_close" style="display: none;">Close</a>
+			</form>
+			</div>
+			<script type="text/javascript">
+			var fnames = new Array();var ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[3]='MMERGE3';ftypes[3]='text';fnames[2]='LNAME';ftypes[2]='text';var err_style = '';
+			try{
+			    err_style = mc_custom_error_style;
+			} catch(e){
+			    err_style = 'margin: 1em 0 0 0; padding: 1em 0.5em 0.5em 0.5em; background: FFEEEE none repeat scroll 0% 0%; font-weight: bold; float: left; z-index: 1; width: 80%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; color: FF0000;';
+			}
+			var mce_jQuery = jQuery.noConflict();
+			mce_jQuery(document).ready( function($) {
+			  var options = { errorClass: 'mce_inline_error', errorElement: 'div', errorStyle: err_style, onkeyup: function(){}, onfocusout:function(){}, onblur:function(){}  };
+			  var mce_validator = mce_jQuery("#mc-embedded-subscribe-form").validate(options);
+			  options = { url: 'http://pythonweekly.us2.list-manage2.com/subscribe/post-json?u=e2e180baf855ac797ef407fc7&id=9e26887fc5&c=?', type: 'GET', dataType: 'json', contentType: "application/json; charset=utf-8",
+					beforeSubmit: function(){
+					    mce_jQuery('#mce_tmp_error_msg').remove();
+					    mce_jQuery('.datefield','#mc_embed_signup').each(
+						function(){
+						    var txt = 'filled';
+						    var fields = new Array();
+						    var i = 0;
+						    mce_jQuery(':text', this).each(
+							function(){
+							    fields[i] = this;
+							    i++;
+							});
+						    mce_jQuery(':hidden', this).each(
+							function(){
+								if ( fields[0].value=='MM' && fields[1].value=='DD' && fields[2].value=='YYYY' ){
+									this.value = '';
+												} else if ( fields[0].value=='' && fields[1].value=='' && fields[2].value=='' ){
+									this.value = '';
+												} else {
+								    this.value = fields[0].value+'/'+fields[1].value+'/'+fields[2].value;
+								}
+							});
+						});
+					    return mce_validator.form();
+					}, 
+					success: mce_success_cb
+				    };
+			  mce_jQuery('#mc-embedded-subscribe-form').ajaxForm(options);
+
+			});
+			function mce_success_cb(resp){
+			    mce_jQuery('#mce-success-response').hide();
+			    mce_jQuery('#mce-error-response').hide();
+			    if (resp.result=="success"){
+				window.location = "../success.html";
+				//mce_jQuery('#mce-'+resp.result+'-response').show();
+				//mce_jQuery('#mce-'+resp.result+'-response').html(resp.msg);
+				mce_jQuery('#mc-embedded-subscribe-form').each(function(){
+				    this.reset();
+				});
+			    } else {
+				var index = -1;
+				var msg;
+				try {
+				    var parts = resp.msg.split(' - ',2);
+				    if (parts[1]==undefined){
+					msg = resp.msg;
+				    } else {
+					i = parseInt(parts[0]);
+					if (i.toString() == parts[0]){
+					    index = parts[0];
+					    msg = parts[1];
+					} else {
+					    index = -1;
+					    msg = resp.msg;
+					}
+				    }
+				} catch(e){
+				    index = -1;
+				    msg = resp.msg;
+				}
+				try{
+				    if (index== -1){
+					mce_jQuery('#mce-'+resp.result+'-response').show();
+					mce_jQuery('#mce-'+resp.result+'-response').html(msg);            
+				    } else {
+					err_id = 'mce_tmp_error_msg';
+					html = '<div id="'+err_id+'" style="'+err_style+'"> '+msg+'</div>';
+					
+					var input_id = '#mc_embed_signup';
+					var f = mce_jQuery(input_id);
+					if (ftypes[index]=='address'){
+					    input_id = '#mce-'+fnames[index]+'-addr1';
+					    f = mce_jQuery(input_id).parent().parent().get(0);
+					} else if (ftypes[index]=='date'){
+					    input_id = '#mce-'+fnames[index]+'-month';
+					    f = mce_jQuery(input_id).parent().parent().get(0);
+					} else {
+					    input_id = '#mce-'+fnames[index];
+					    f = mce_jQuery().parent(input_id).get(0);
+					}
+					if (f){
+					    mce_jQuery(f).append(html);
+					    mce_jQuery(input_id).focus();
+					} else {
+					    mce_jQuery('#mce-'+resp.result+'-response').show();
+					    mce_jQuery('#mce-'+resp.result+'-response').html(msg);
+					}
+				    }
+				} catch(e){
+				    mce_jQuery('#mce-'+resp.result+'-response').show();
+				    mce_jQuery('#mce-'+resp.result+'-response').html(msg);
+				}
+			    }
+			}
+			</script>
+			<!--End mc_embed_signup-->
+	
+<!--<div align="center">
+<br />
+	<a href="http://www.pythonweekly.com/"><img src="subscribe.png" border="none"></a>
+<br />
+-->
+</div>
+		<table width="100%" cellspacing="0" class="backgroundTable" style="background-color: #F5F1DE;">
+			<tr>
+				<td valign="top" align="center">
+					<table id="contentTable" cellspacing="0" cellpadding="0" width="600" style="border: 0px none #000000;margin-top: 10px;">
+						<tr>
+							<td>
+								<table width="600" cellpadding="0" cellspacing="0">
+									<tr>
+										<td class="headerBar" style="background-color: #F5F1DE;border-top: 0px none #333333;border-bottom: 0px none #FFFFFF;padding: 10px;">
+											<div class="headerBarText" style="color: #333333;font-size: 30px;font-family: Arial;font-weight: normal;text-align: left;">
+												<div style="text-align: center;"><img src="http://gallery.mailchimp.com/e2e180baf855ac797ef407fc7/images/logo.png" alt="" border="0" style="margin: 0; padding: 0;max-width: 600px;" width="405" height="105"></div>
+											</div>
+										</td>
+									</tr>
+								</table>
+								<table width="600" cellpadding="20" cellspacing="0" class="bodyTable">
+									<tr>
+										<td valign="top" align="left" class="defaultText" style="font-size: 13px;color: #333333;line-height: 150%;font-family: Helvetica;background-color: #F5F1DE;padding: 20px;border: 0px none #FFFFFF;">Welcome to issue 3 of Python Weekly. I am launching a <span style="font-size:14px;"><a href="http://jobs.pythonweekly.com/" style="color: #0044CC;text-decoration: underline;font-weight: bold;">Python Weekly Job Board</a></span> for python jobs. It is FREE to list jobs, but the requirement is that a job must be python related. In addition, job seekers have their own portal and management tools where they can post their resume, update their profile, and be searchable on the site.&nbsp;<br>
+<br>
+If you would like to learn Python, check out <span style="font-size:14px;"><a href="http://affiliates.udemy.com/l/63/8443" style="color: #0044CC;text-decoration: underline;font-weight: bold;">Learn Python the Hard Way</a></span>, which is Zed Shaw&#39;s 4-week crash course in building web applications with Python.<br>
+<div>
+	&nbsp;</div>
+<span class="yiv601008724Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span class="yiv601008724Apple-style-span" style="border-collapse: collapse; font-family: Helvetica; font-size: 14px; font-weight: bold; line-height: 16px;">News</span></span><br>
+<br>
+<div>
+	<span style="font-size:14px;"><a href="http://blog.jetbrains.com/pycharm/2011/10/new-pycharm-2-0-eap-build-cython-coffeescript-code-coverage/" style="color: #0044CC;text-decoration: underline;font-weight: bold;">New PyCharm 2.0 EAP build: Cython, CoffeeScript, code coverage</a></span></div>
+<div>
+	The latest PyCharm 2.0 EAP build has three new features - Initial support for Cython, new CoffeeScript plugin and code coverage.</div>
+<br>
+<p>
+	<span class="yiv601008724Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span class="yiv601008724Apple-style-span" style="border-collapse: collapse; color: rgb(51, 51, 51); font-family: Helvetica; font-size: 13px; line-height: 15px;"><span class="yiv601008724yiv1810326523yiv2066971547yiv1761786840yiv1758569282yiv748652842subTitle" style="line-height: 1.2em; outline-style: none; font-size: 14px; font-weight: bold; color: rgb(0, 0, 0); font-style: normal; font-family: Helvetica;">Articles</span>,<span class="yiv601008724yiv1810326523yiv2066971547yiv1761786840yiv1758569282yiv748652842subTitle" style="line-height: 1.2em; outline-style: none; font-size: 14px; font-weight: bold; color: rgb(0, 0, 0); font-style: normal; font-family: Helvetica;"><span class="yiv601008724Apple-converted-space">&nbsp;</span>Tutorials and Talks</span></span></span></p>
+<div>
+	<span style="font-size:14px;"><a href="http://www.slideshare.net/marcelcaraciolo/crab-a-python-framework-for-building-recommender-systems" style="color: #0044CC;text-decoration: underline;font-weight: bold;">Crab: A Python Framework for Building Recommender Systems</a></span></div>
+<div>
+	Crab is a flexible, fast recommender engine for Python that integrates classic information filtering recommendation algorithms in the world of scientific Python packages (numpy, scipy, matplotlib). The engine aims to provide a rich set of components from which you can construct a customized recommender system from a set of algorithms.</div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-size:14px;"><a href="http://derek.simkowiak.net.nyud.net/motion-tracking-with-python/" style="color: #0044CC;text-decoration: underline;font-weight: bold;">Motion Tracking with Python</a></span></div>
+<div>
+	In this article, the author describes how he implemented real time motion tracking using OpenCV with Python.</div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-size:14px;"><a href="http://www.wallix.org/2011/10/04/pylogsparser-how-to-write-a-normalizer/" style="color: #0044CC;text-decoration: underline;font-weight: bold;">PyLogsParser: how to write a normalizer</a></span></div>
+<div>
+	This post describes how to write a log normalizer for fail2ban logs using the PyLogsParser library.</div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-size:14px;"><a href="http://www.slideshare.net/nzpugdn/patterns-in-python" style="color: #0044CC;text-decoration: underline;font-weight: bold;">Patterns in Python</a></span></div>
+<div>
+	Python implements several important and well known patterns in the core language but several are not represented. This talk presents a survey of common design patterns and focuses on how to implement those that are not supported in the language. Knowing how common patterns are implemented in Python will help programmers familiar with other languages to transfer their expertise to Python.</div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-size:14px;"><a href="http://blip.tv/djangocon/building-apis-in-django-with-tastypie-5572790" style="color: #0044CC;text-decoration: underline;font-weight: bold;">Building APIs in Django with Tastypie</a></span></div>
+<div>
+	Tastypie is one of a couple of frameworks for building APIs with Django. Issac Kelly goes over some of the reasons you might pick Tastypie, and how to implement a Tastypie on top of an existing Django project.</div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-size:14px;"><a href="http://www.slideshare.net/nzpugdn/spotlight-on-python" style="color: #0044CC;text-decoration: underline;font-weight: bold;">Spotlight on Python&nbsp;</a></span></div>
+<div>
+	This talk covers development and use of a Python-powered system designed for lighting bands in small venues. It covers the problems of lighting bands, the development process, the results, lessons learned.</div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-size:14px;"><a href="http://www.michael-noll.com/tutorials/writing-an-hadoop-mapreduce-program-in-python/" style="color: #0044CC;text-decoration: underline;font-weight: bold;">Writing An Hadoop MapReduce Program In Python</a></span></div>
+<div>
+	This tutorial describes how to write a simple MapReduce program for Hadoop in the Python programming language.</div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-size:14px;"><a href="http://hyperpolyglot.org/scripting" style="color: #0044CC;text-decoration: underline;font-weight: bold;">Scripting Languages: PHP, Perl, Python, Ruby</a></span></div>
+<div>
+	A side-by-side reference sheet comparing Perl, PHP, Python or Ruby.</div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-size:14px;"><a href="http://martin.tecnodoc.com.ar/default/post/2011/09/30/11_web2py-scheduler" style="color: #0044CC;text-decoration: underline;font-weight: bold;">Web2py scheduler</a></span></div>
+<div>
+	The new &quot;experimental&quot; scheduler tools is perhaps the next replacement to the current cron in web2py. It&#39;s very simple and easy to use. With scheduler we can run scheduler or long pooling tasks.</div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-size:14px;"><a href="http://blip.tv/episode/5602134" style="color: #0044CC;text-decoration: underline;font-weight: bold;">Python and Robots: Teaching Programming in High School</a></span></div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	<span class="Apple-style-span" style="border-collapse: collapse; font-size: 14px; font-weight: bold; line-height: 16px; color: rgb(0, 0, 0); ">Interesting Projects, Tools and Libraries</span></div>
+<br>
+<div>
+	<span style="font-size:14px;"><a href="http://www.minecraftprint.com/" style="color: #0044CC;text-decoration: underline;font-weight: bold;">Minecraft.Print()&nbsp;</a></span></div>
+<div>
+	Minecraft.Print() is a python library for converting defined regions of Minecraft levels to a 3D Printable format.</div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-size:14px;"><a href="https://github.com/shazow/apiclient" style="color: #0044CC;text-decoration: underline;font-weight: bold;">apiclient</a></span></div>
+<div>
+	It is a framework for making good Python API client libraries using urllib3.</div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-size:14px;"><a href="https://gist.github.com/1258304" style="color: #0044CC;text-decoration: underline;font-weight: bold;">Python script to get Xbox Live friends</a></span></div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-size:14px;"><a href="https://github.com/dcramer/django-sentry" style="color: #0044CC;text-decoration: underline;font-weight: bold;">Sentry</a></span></div>
+<div>
+	Sentry is a realtime event logging and aggregation platform built on Django. Sentry provides you with a generic interface to view and interact with your error logs. By default, it will catch any exception thrown by Django and store it in a database. With this it allows you to interact and view near real-time information to discover issues and more easily trace them in your application.</div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-size:14px;"><a href="http://splinter.cobrateam.info/" style="color: #0044CC;text-decoration: underline;font-weight: bold;">Splinter</a></span></div>
+<div>
+	Splinter is an open source tool for testing web applications using Python. It lets you automate browser actions, such as visiting URLs and interacting with their items.</div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-size:14px;"><a href="https://github.com/agiliq/merchant" style="color: #0044CC;text-decoration: underline;font-weight: bold;">Merchant</a></span></div>
+<div>
+	Django-Merchant is a django application that enables you to use multiple payment processors from a single API.</div>
+<div>
+	&nbsp;</div>
+<br>
+<span class="yiv601008724Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span class="yiv601008724Apple-style-span" style="border-collapse: collapse; font-family: Helvetica; font-size: 14px; font-weight: bold; line-height: 16px;">New Releases</span></span><br>
+<br>
+<div>
+	<span style="font-size:14px;"><a href="http://codersbuffet.blogspot.com/2011/09/announcement-turbogears2-213-released.html" style="color: #0044CC;text-decoration: underline;font-weight: bold;">TurboGears2 2.1.3 Released</a></span></div>
+<div>
+	This release adds support for the MongoDB and the Ming ORM for it, in addition to bringing in some small bugfixes.</div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-size:14px;"><a href="https://groups.google.com/forum/#!topic/google-appengine/f9YVplAlRs4" style="color: #0044CC;text-decoration: underline;font-weight: bold;">Google App Engine Prerelease SDK 1.5.5 available</a></span></div>
+<div>
+	<br>
+	&nbsp;</div>
+<meta content="text/html; charset=utf-8" http-equiv="content-type">
+<span class="Apple-style-span" style="border-collapse: collapse; font-size: 14px; font-weight: bold; line-height: 16px; color: rgb(0, 0, 0); ">Books</span><br>
+<br>
+Here is a list of recently published python related books<br>
+<br>
+<div>
+	<span style="font-size:14px;"><a href="http://www.amazon.com/gp/product/1449310370/ref=as_li_tf_tl?ie=UTF8&tag=pythonweekly-20&linkCode=as2&camp=217145&creative=399373&creativeASIN=1449310370" style="color: #0044CC;text-decoration: underline;font-weight: bold;">MongoDB and Python</a></span></div>
+<div>
+	Learn how to leverage MongoDB with your Python applications, using the hands-on recipes in this book. You get complete code samples for tasks such as making fast geo queries for location-based apps, efficiently indexing your user documents for social-graph lookups, and many other scenarios.</div>
+<meta content="text/html; charset=utf-8" http-equiv="content-type">
+<br>
+<div>
+	<span style="font-size:14px;"><a href="http://www.amazon.com/gp/product/1466366052/ref=as_li_tf_tl?ie=UTF8&tag=pythonweekly-20&linkCode=as2&camp=217145&creative=399373&creativeASIN=1466366052" style="color: #0044CC;text-decoration: underline;font-weight: bold;">Python Programming</a></span></div>
+<div>
+	This book about python programming is written by team of contributors. It introduces the language for new python users and covers key concepts and python modules.</div>
+<meta content="text/html; charset=utf-8" http-equiv="content-type">
+<br>
+<div>
+	<span class="Apple-style-span" style="font-size: 14px; "><a href="http://www.amazon.com/gp/product/0984221247/ref=as_li_tf_tl?ie=UTF8&tag=pythonweekly-20&linkCode=as2&camp=217145&creative=399373&creativeASIN=0984221247" style="color: #0044CC;text-decoration: underline;font-weight: bold;">Non-Programmers Tutorial For Python: An introduction to the Python programming language for non programmers&nbsp;</a></span></div>
+<div>
+	Non-Programmers Tutorial For Python ( 2.6) is a tutorial designed to be a introduction to the Python programming language. This guide is for someone with no programming experience.</div>
+<meta content="text/html; charset=utf-8" http-equiv="content-type">
+<br>
+<div>
+	<span style="font-size:14px;"><a href="http://www.amazon.com/gp/product/0984221239/ref=as_li_tf_tl?ie=UTF8&tag=pythonweekly-20&linkCode=as2&camp=217145&creative=399373&creativeASIN=0984221239" style="color: #0044CC;text-decoration: underline;font-weight: bold;">A Python Book: Beginning Python, Advanced Python, and Python Exercises</a></span></div>
+<div>
+	This document is a self learning document for a course in Python programming. This course contains (1) a part for beginners, (2) a discussion of several advanced topics that are of interest to Python programmers, and (3) a Pythonworkbook with lots of exercises.</div>
+<div>
+	<br>
+	&nbsp;</div>
+<span class="yiv874821690yiv1810326523yiv2066971547yiv485554180subTitle" style="font-size: 14px; font-weight: bold; color: rgb(0, 0, 0); font-style: normal; font-family: Helvetica;">Python Jobs of the Week</span><br>
+<br>
+<div>
+	<span style="font-size:14px;"><a href="http://jobs.pythonweekly.com/jobs/python-developer/" style="color: #0044CC;text-decoration: underline;font-weight: bold;">Python Developer at AdMarketplace&nbsp;</a></span></div>
+<div>
+	This is a BIG data analysis and infrastructure automation opportunity. &nbsp;As part of the core technology development team, you will be working on the real-time data engine of AdMarketplace.com.&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-size:14px;"><a href="http://jobs.pythonweekly.com/jobs/back-end-web-developer/" style="color: #0044CC;text-decoration: underline;font-weight: bold;">Back-End Web Developer at Occipital</a></span></div>
+<div>
+	Do you want to push the boundaries of what&#39;s possible in web technology to help build the future of augmented reality? Are you able to hold a complete understanding of a complex backend system in your head to build fast and reliable web applications and APIs? Do you have a deep understanding of how networking, databases, and servers work down to the bare metal? Then we really want to meet you.</div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-size:14px;"><a href="http://jobs.pythonweekly.com/jobs/web-developer-2/" style="color: #0044CC;text-decoration: underline;font-weight: bold;">Web Developer at LifeSquare&nbsp;</a></span></div>
+<div>
+	You will own and manage our entire front-end, including our websites for consumers and for medical professionals. &nbsp;You should have a passion for creating clean, intuitive web applications. &nbsp;And because we are dealing with critical medical information, it is important that we find a developer with a keen eye for interaction design.</div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-size:14px;"><a href="http://jobs.pythonweekly.com/jobs/senior-back-end-web-developer/" style="color: #0044CC;text-decoration: underline;font-weight: bold;">Senior Back-end Web Developer at Padopolis</a></span></div>
+<div>
+	Padopolis has an amazing opportunity to transform the mobile application landscape for ecommerce with its unique set of mobile applications. We are looking for an experienced back-end web developer to join our team with the opportunity to make a big impact. We are seeking an individual who is passionate about web development and has experience working in mobile environments.</div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-size:14px;"><a href="http://jobs.pythonweekly.com/jobs/staff-web-developer/" style="color: #0044CC;text-decoration: underline;font-weight: bold;">Staff Web Developer at Democracy Fund</a></span></div>
+<div>
+	We are looking for a smart, savvy developer with fluency in Django/Python, confidence in building large scale web applications, expertise with MySQL and/or PostgreSQL, comfort administering a Linux server environment, and a love of clean, elegant code.</div>
+<div>
+	&nbsp;</div>
+
+</td>
+									</tr>
+									
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<span style="padding: 0px;"></span>
+
+<!--<div align="center">
+	<a href="http://www.pythonweekly.com/"><img src="subscribe.png" border="none"></a>
+</div>
+<br />
+<br />
+-->
+<div align="center">
+<!-- Begin MailChimp Signup Form -->
+			<!--[if IE]>
+			<style type="text/css" media="screen">
+				#mc_embed_signup fieldset {position: relative;}
+				#mc_embed_signup legend {position: absolute; top: -1em; left: .2em;}
+			</style>
+			<![endif]--> 
+			<!--[if IE 7]>
+			<style type="text/css" media="screen">
+				.mc-field-group {overflow:visible;}
+			</style>
+			<![endif]-->
+			<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
+			<script type="text/javascript" src="http://downloads.mailchimp.com/js/jquery.validate.js"></script>
+			<script type="text/javascript" src="http://downloads.mailchimp.com/js/jquery.form.js"></script>
+
+			<div id="mc_embed_signup">
+			<form action="http://pythonweekly.us2.list-manage2.com/subscribe/post?u=e2e180baf855ac797ef407fc7&amp;id=9e26887fc5" method="post" id="mc-embedded-subscribe-form-1" name="mc-embedded-subscribe-form-1" class="validate" target="_blank" style="font: normal 100% Arial, sans-serif;font-size: 10px;">
+			<fieldset style="-moz-border-radius: 4px;border-radius: 4px;-webkit-border-radius: 4px;border: 1px solid #ccc;padding-top: 1.5em;margin: .5em 0;background-color: #fff;color: #000;text-align: left;">
+				<legend style="white-space: normal;text-transform: capitalize;font-weight: bold;color: #000;background: #F5F1DE;padding: .5em 1em;border: 1px solid #ccc;-moz-border-radius: 4px;border-radius: 4px;-webkit-border-radius: 4px;font-size: 1.5em;"><span>Get Your Weekly Dose of Python</span></legend>
+			<!--	<div class="indicate-required" style="text-align: right;font-style: italic;overflow: hidden;color: #000;margin: 0 9% 0 0;">* indicates required</div> -->
+			<div class="mc-field-group" style="margin: 0em 0%;clear: both;overflow: hidden;">
+			<label for="mce-EMAIL" style="display: inline;margin: em 0;line-height: 1em;font-weight: normal;font-size: 2.3em;padding: .2em">Enter your e-mail:<strong class="note-required"></strong>
+			</label>
+			<input type="text" value="" name="EMAIL" class="required email" id="mce-EMAIL" style="height:2.3em;margin-right: 1.5em;padding: .2em .3em;width: 50%;float: left;z-index: 999;">
+			<input type="image" src="subscribe.png" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn" style="clear: both;width: auto;display: inline;padding: 1em">
+			<label style="display: inline;margin: em 0;line-height: 1.5em;font-weight: normal;font-size: 1.5em;padding: .2em">A free, once-weekly e-mail round-up of Python news, articles, tools and libraries, new releases, events and more. Easy to unsubscribe. No spam.</label>
+			</div>
+					<div id="mce-responses" style="float: left;top: -1.4em;padding: 0em .5em 0em .5em;overflow: hidden;width: 90%;margin: 0 5%;clear: both;">
+						<div class="response" id="mce-error-response" style="display: none;margin: 1em 0;padding: 1em .5em .5em 0;font-weight: bold;float: left;top: -1.5em;z-index: 1;width: 80%;background: FFFFFF;color: #D12F19;"></div>
+						<div class="response" id="mce-success-response" style="display: none;margin: 1em 0;padding: 1em .5em .5em 0;font-weight: bold;float: left;top: -1.5em;z-index: 1;width: 80%;background: #FFFFFF;color: #529214;"></div>
+					</div>
+				<!--	<div><input type="image" src="subscribe.png" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn" style="clear: both;width: auto;display: block;margin: 1em 0 1em 7%;"></div> -->
+				</fieldset>	
+				<a href="#" id="mc_embed_close" class="mc_embed_close" style="display: none;">Close</a>
+			</form>
+			</div>
+			<script type="text/javascript">
+			var fnames = new Array();var ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[3]='MMERGE3';ftypes[3]='text';fnames[2]='LNAME';ftypes[2]='text';var err_style = '';
+			try{
+			    err_style = mc_custom_error_style;
+			} catch(e){
+			    err_style = 'margin: 1em 0 0 0; padding: 1em 0.5em 0.5em 0.5em; background: FFEEEE none repeat scroll 0% 0%; font-weight: bold; float: left; z-index: 1; width: 80%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; color: FF0000;';
+			}
+			var mce_jQuery = jQuery.noConflict();
+			mce_jQuery(document).ready( function($) {
+			  var options = { errorClass: 'mce_inline_error', errorElement: 'div', errorStyle: err_style, onkeyup: function(){}, onfocusout:function(){}, onblur:function(){}  };
+			  var mce_validator = mce_jQuery("#mc-embedded-subscribe-form-1").validate(options);
+			  options = { url: 'http://pythonweekly.us2.list-manage2.com/subscribe/post-json?u=e2e180baf855ac797ef407fc7&id=9e26887fc5&c=?', type: 'GET', dataType: 'json', contentType: "application/json; charset=utf-8",
+					beforeSubmit: function(){
+					    mce_jQuery('#mce_tmp_error_msg').remove();
+					    mce_jQuery('.datefield','#mc_embed_signup').each(
+						function(){
+						    var txt = 'filled';
+						    var fields = new Array();
+						    var i = 0;
+						    mce_jQuery(':text', this).each(
+							function(){
+							    fields[i] = this;
+							    i++;
+							});
+						    mce_jQuery(':hidden', this).each(
+							function(){
+								if ( fields[0].value=='MM' && fields[1].value=='DD' && fields[2].value=='YYYY' ){
+									this.value = '';
+												} else if ( fields[0].value=='' && fields[1].value=='' && fields[2].value=='' ){
+									this.value = '';
+												} else {
+								    this.value = fields[0].value+'/'+fields[1].value+'/'+fields[2].value;
+								}
+							});
+						});
+					    return mce_validator.form();
+					}, 
+					success: mce_success_cb
+				    };
+			  mce_jQuery('#mc-embedded-subscribe-form-1').ajaxForm(options);
+
+			});
+			function mce_success_cb(resp){
+			    mce_jQuery('#mce-success-response').hide();
+			    mce_jQuery('#mce-error-response').hide();
+			    if (resp.result=="success"){
+				window.location = "../success.html";
+				//mce_jQuery('#mce-'+resp.result+'-response').show();
+				//mce_jQuery('#mce-'+resp.result+'-response').html(resp.msg);
+				mce_jQuery('#mc-embedded-subscribe-form-1').each(function(){
+				    this.reset();
+				});
+			    } else {
+				var index = -1;
+				var msg;
+				try {
+				    var parts = resp.msg.split(' - ',2);
+				    if (parts[1]==undefined){
+					msg = resp.msg;
+				    } else {
+					i = parseInt(parts[0]);
+					if (i.toString() == parts[0]){
+					    index = parts[0];
+					    msg = parts[1];
+					} else {
+					    index = -1;
+					    msg = resp.msg;
+					}
+				    }
+				} catch(e){
+				    index = -1;
+				    msg = resp.msg;
+				}
+				try{
+				    if (index== -1){
+					mce_jQuery('#mce-'+resp.result+'-response').show();
+					mce_jQuery('#mce-'+resp.result+'-response').html(msg);            
+				    } else {
+					err_id = 'mce_tmp_error_msg';
+					html = '<div id="'+err_id+'" style="'+err_style+'"> '+msg+'</div>';
+					
+					var input_id = '#mc_embed_signup';
+					var f = mce_jQuery(input_id);
+					if (ftypes[index]=='address'){
+					    input_id = '#mce-'+fnames[index]+'-addr1';
+					    f = mce_jQuery(input_id).parent().parent().get(0);
+					} else if (ftypes[index]=='date'){
+					    input_id = '#mce-'+fnames[index]+'-month';
+					    f = mce_jQuery(input_id).parent().parent().get(0);
+					} else {
+					    input_id = '#mce-'+fnames[index];
+					    f = mce_jQuery().parent(input_id).get(0);
+					}
+					if (f){
+					    mce_jQuery(f).append(html);
+					    mce_jQuery(input_id).focus();
+					} else {
+					    mce_jQuery('#mce-'+resp.result+'-response').show();
+					    mce_jQuery('#mce-'+resp.result+'-response').html(msg);
+					}
+				    }
+				} catch(e){
+				    mce_jQuery('#mce-'+resp.result+'-response').show();
+				    mce_jQuery('#mce-'+resp.result+'-response').html(msg);
+				}
+			    }
+			}
+			</script>
+			<!--End mc_embed_signup-->
+
+<br />
+<br />
+</div>
+<!-- GA code -->
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19497299-4']);
+  _gaq.push(['_setDomainName', '.pythonweekly.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+
+</body>
+</html>
